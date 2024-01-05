@@ -1,0 +1,95 @@
+@import url("/assets/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+    font-family: "Roboto";
+    font-size: 14px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 56px 1fr;   
+}
+
+.header-area{
+    grid-area: 1 / 1 / span 1 / end;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 24px;
+    align-content: center;
+    position: sticky;
+}
+
+.logo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    gap: 32px
+}
+
+.search_bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search_bar input{
+    width: 80%;
+    margin: 0;
+}
+
+.search_bar button{
+    margin: 0;
+    text-align: center;
+}
+
+.user_profile{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    align-items: center;
+    justify-content: end;
+    gap: 24px
+}
+
+.sidebar_area{
+    width: 100%;
+    grid-area: 2 / 1 / span 1 / span 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    padding: 24px;
+    gap: 22px
+}
+
+.menu_item {
+    display: flex;
+    
+    align-items: center;
+    gap: 16px
+}
+
+.item_selected {
+    font-weight: 700;
+}
+
+.main_area{
+    background-color: burlywood;
+    grid-area: 2 / 2 / span 1 / span 1;
+    padding: 24px;
+
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(4, 282px);
+    
+}
+
+.video{
+    background-color: antiquewhite;
+    width: 282px;
+    height: 262px;
+}
